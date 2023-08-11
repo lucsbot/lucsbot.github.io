@@ -1,0 +1,20 @@
+@font-face {
+    font-family: omori;
+    src: url("font.ttf");
+}
+body {
+    text-align: center;
+    color: #000000;
+    font-family: omori;
+    font-size: 96px;
+}
+#title {
+    font-size: 112px;
+    font-weight: bolder;
+}
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
