@@ -15,7 +15,7 @@ if (query.get("state")) {
     const d = new Date();
     d.setTime(d.getTime() + 86400000);
     document.cookie = `state=${query.get("state")};expires=${d.toUTCString()};path=/`;
-    $.get("https://lucsbot-2a46d8c3d1b2.herokuapp.com/" + window.location.search, function(data) {
+    $.get("https://lucsbot-2a46d8c3d1b2.herokuapp.com/?state=" + query.get("state"), function(data) {
         console.log(data);
         if (data.url) {
             window.location.href = data.url;
@@ -25,7 +25,7 @@ if (query.get("state")) {
         };
     });
 } else if (cookie) {
-    $.get("https://lucsbot-2a46d8c3d1b2.herokuapp.com/" + cookie, function(data) {
+    $.get("https://lucsbot-2a46d8c3d1b2.herokuapp.com/?state=" + cookie, function(data) {
         console.log(data);
         if (data.url) {
             window.location.href = data.url;
