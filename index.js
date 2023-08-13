@@ -1,10 +1,10 @@
 function hasState() {
-    for (cookie of decodeURIComponent(document.cookie).split(';')) {
-        while (cookie[0] == ' ') {
-            cookie = cookie.substring(1);
+    for (c of decodeURIComponent(document.cookie).split(';')) {
+        while (c[0] == ' ') {
+            c = c.substring(1);
         };
-        if (cookie.indexOf("state=") == 0) {
-            return cookie.substring(6, cookie.length);
+        if (c.indexOf("state=") == 0) {
+            return c.substring(6, c.length);
         };
     }
     return null;
