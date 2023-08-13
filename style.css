@@ -13,8 +13,11 @@ body {
         text-align: center;
         color: #000000;
         font-family: omori;
-        font-size: 2.75vw;
+        font-size: x-large;
     }
+}
+.text {
+    text-align: left;
 }
 #title {
     font-weight: bolder;
@@ -25,9 +28,9 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
 }
-.bottom {
+.top {
     position: absolute;
-    bottom: 0%;
+    top: 5%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
