@@ -6,10 +6,17 @@ body {
     text-align: center;
     color: #000000;
     font-family: omori;
-    font-size: 96px;
+    font-size: 3vh;
+}
+@media only screen and (min-width: 768px) {
+    body {
+        text-align: center;
+        color: #000000;
+        font-family: omori;
+        font-size: 2.75vw;
+    }
 }
 #title {
-    font-size: 112px;
     font-weight: bolder;
 }
 .center {
@@ -18,10 +25,18 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+.bottom {
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 a {
     color: #ffffff;
-    font-weight: bolder;
+    font-weight: lighter;
     -webkit-text-stroke: 1px #000000;
+    padding-bottom: 1px;
+    border-bottom: 1px solid #000000;
 }
 a:link { text-decoration: none; }
 a:visited { text-decoration: none; }
